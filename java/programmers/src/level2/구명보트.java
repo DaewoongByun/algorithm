@@ -1,6 +1,6 @@
 package level2;
 
-public class ±¸¸íº¸Æ® {
+public class êµ¬ëª…ë³´íŠ¸ {
 
 	public static void main(String[] args) {
 		System.out.println(solution(new int[] { 40, 40, 40, 40 }, 50));
