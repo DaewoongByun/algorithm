@@ -3,7 +3,7 @@ package baekjoon;
 import java.util.*;
 import java.io.*;
 
-public class 사다리타기2469 {
+public class 사다리타기_2469 {
 	static int K, N;
 	static String result;
 	static String[] map;
