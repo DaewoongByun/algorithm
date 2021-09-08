@@ -3,7 +3,7 @@ package baekjoon;
 import java.util.*;
 import java.io.*;
 
-public class 불 {
+public class 불_5427 {
 	static int N, M;
 	static char[][] map;
 	static int[] dr = { -1, 0, 1, 0 };

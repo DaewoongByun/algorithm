@@ -3,7 +3,7 @@ package baekjoon;
 import java.io.*;
 import java.util.*;
 
-public class 마인크래프트 {
+public class 마인크래프트_18111 {
 	static int N, M, B, maxHeight, t, resultHeight, prevTime;
 	static int[][] map;
 	static int[] blockCount;
