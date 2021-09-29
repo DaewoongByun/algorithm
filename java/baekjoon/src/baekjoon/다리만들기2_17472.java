@@ -32,7 +32,7 @@ public class 다리만들기2_17472 {
 		int result = 0;
 		PriorityQueue<int[]> pq = new PriorityQueue<>((n1, n2) -> n1[1] - n2[1]);
 		boolean[] visit = new boolean[islandCount + 1];
-		pq.offer(new int[] { 1, 0});
+		pq.offer(new int[] { 1, 0 });
 
 		while (!pq.isEmpty()) {
 			int[] cur = pq.poll();
@@ -63,10 +63,10 @@ public class 다리만들기2_17472 {
 		for (int i = 0; i < N; i++) {
 			for (int j = 0; j < M; j++) {
 				if (map[i][j] > 0) {
-					for(int d = 0; d < 4; d++) {
+					for (int d = 0; d < 4; d++) {
 						int nr = i + dr[d];
 						int nc = j + dc[d];
-						if(nr >= 0 && nr < N && nc >= 0 && nc < M && map[nr][nc] == 0) {
+						if (nr >= 0 && nr < N && nc >= 0 && nc < M && map[nr][nc] == 0) {
 							getIslandDistance(i, j, d);
 						}
 					}
@@ -75,22 +75,21 @@ public class 다리만들기2_17472 {
 		}
 	}
 
-	
-
 	private static void getIslandDistance(int r, int c, int dir) {
 		int length = 0;
 		int islandNum = map[r][c];
-		while(true) {
+		while (true) {
 			r += dr[dir];
 			c += dc[dir];
-			if(r < 0 || r >= N || c < 0 || c >= M) {
+			if (r < 0 || r >= N || c < 0 || c >= M) {
 				return;
 			}
-			if(map[r][c] == 0) {
+			if (map[r][c] == 0) {
 				length++;
-			} else if(map[r][c] != islandNum){
-				if(length < 2) return;
-				if(adjMat[islandNum][map[r][c]] == 0) {
+			} else if (map[r][c] != islandNum) {
+				if (length < 2)
+					return;
+				if (adjMat[islandNum][map[r][c]] == 0) {
 					adjMat[islandNum][map[r][c]] = length;
 					adjMat[map[r][c]][islandNum] = length;
 				} else {

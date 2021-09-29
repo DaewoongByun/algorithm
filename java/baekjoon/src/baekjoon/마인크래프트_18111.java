@@ -36,10 +36,10 @@ public class 마인크래프트_18111 {
 				// prevTime > time : 계속 감
 				// prevTime == time : resultHeight 안바꿈
 				// prevTime < time : t가 결과
-				if(prevTime == 0) {
+				if (prevTime == 0) {
 					prevTime = time;
 					resultHeight = height;
-					if(time == 0) {
+					if (time == 0) {
 						break;
 					}
 				} else {
