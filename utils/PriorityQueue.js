@@ -67,6 +67,7 @@ class PriorityQueue {
     let index = 1;
     while (true) {
       const minIndex = this.#getMinIndex(index * 2, index * 2 + 1);
+      if (minIndex === undefined) break;
       if (this.#comp(this.#arr[index], this.#arr[minIndex]) > 0) {
         this.#swap(index, minIndex);
         index = minIndex;
